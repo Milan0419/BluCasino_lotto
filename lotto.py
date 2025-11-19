@@ -9,8 +9,14 @@ print(lotto)
 
 szamok = []
 for i in range(5):
-    i = int(input("Írd be a lottószámod:"))
-    szamok.append(i)
+    while True:
+        try:
+            i = int(input("Írd be a lottószámod:"))
+            szamok.append(i)
+            break
+        except ValueError:
+            
+        
 
 
 for i in range(5):
